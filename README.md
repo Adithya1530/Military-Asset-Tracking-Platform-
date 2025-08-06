@@ -39,16 +39,23 @@ A Spring Boot-based backend application designed to manage and track military as
         │     ├── AssetService.java
         ├── repository
               ├── AssetRepository.java
+        
+---------
 
 ## 🛠️ Configure Database
 
-Update the application.properties file with your MySQL credentials: 
+Update the `application.properties` file with your MySQL credentials:
+
+```properties
 spring.datasource.url=jdbc:mysql://localhost:3306/mams_db
 spring.datasource.username=your_db_username
 spring.datasource.password=your_db_password
 spring.jpa.hibernate.ddl-auto=update
 
+---------
+
 ## 📖 API Documentation
 
-Once the app is running, access Swagger UI at:
+After running the application, you can access the Swagger UI for interactive API documentation at:
 🔗 http://localhost:8080/swagger-ui/index.html
+Use this interface to explore and test all available REST endpoints.
